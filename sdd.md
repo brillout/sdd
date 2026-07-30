@@ -44,7 +44,7 @@ Notes:
   - Every content should earn its place: either it's a high-level summary of knowledge written in code, or it's knowledge not written in code
 - ELI5
   - Explain in simple terms, without jargon, assuming zero prior knowledge about the code
-  - However, you *can* and *should* assume the reader is familiar with the *high-level* goals of the project — that's your target: explain it to this audience (zero knowledge about the code, but knowledge about the project)
+  - However, you *can* and *should* assume the reader is familiar with the *high-level* goals of the project — that's your target audience: zero knowledge about the code, but knowledge about the project
 - Don't create `spec.md` for code that doesn't represent business logic, and also skip minor business logic, for example:
   - Tests
   - `.svg`
