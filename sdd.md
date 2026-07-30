@@ -35,7 +35,6 @@ Read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 Notes:
-- All `##` sections are optional, e.g. small file => one-sentence description can be enough
 - The goal `spec.md` is for humans to quickly get a high-level understanding of the business logic — keep it all high-level:
   - Humans reasons top-down (high-level first)
   - If a human wants low-level details, he can look at the code => no need to document low-level or trivial logic
@@ -46,6 +45,7 @@ Notes:
 - ELI5
   - Explain in simple terms, without jargon, assuming zero prior knowledge about the code
   - However, you *can* and *should* assume the reader is familiar with the *high-level* goals of the project — that's your target audience: zero knowledge about the code, but knowledge about the project
+- All `##` sections are optional, e.g. small file => one-sentence description can be enough
 - Don't create `spec.md` for code that doesn't represent business logic, and also skip minor business logic, for example:
   - Tests
   - `.svg`
