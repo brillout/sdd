@@ -36,8 +36,9 @@ Make sure to read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main
 
 Notes:
 - All `##` sections are optional, e.g. small file => one-sentence description can be enough
-- The goal `spec.md` is for humans to have a quick high-level understanding of the business logic
-  - Keep it high-level: humans reasons top-down (high-level first) — if a human wants low-level details, he can look at the code
+- The goal `spec.md` is for humans to have a quick high-level understanding of the business logic, so keep it high-level:
+  - Humans reasons top-down (high-level first)
+  - If a human wants low-level details, he can look at the code => no need to document low-level or trivial logic
 - Aim for 100% *high-level* coverage, while keeping spec.md as succinct as possible (don't hesitate to skip sections)
   - Only cover business logic that is both *major* (plays a central and crucial role) and *high-level* (don't describe what code does, describe what's the high-level idea the code implements)
 - DRY
