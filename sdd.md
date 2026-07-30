@@ -5,7 +5,7 @@ For each file and directory containing software source code, generate a `spec.md
 Content:
 
 ```md
-One-sentence description of what this directory/file does.
+One-sentence description of what this file/directory does.
 
 ## TLDR
 
@@ -15,7 +15,7 @@ One-sentence description of what this directory/file does.
 
 ## Problems
 
-List of non-trivial problems.
+List of non-obvious problems.
 
 ## Decisions
 
@@ -23,7 +23,7 @@ List of non-obvious decisions.
 
 ## Facts
 
-List of non-trival knowledge.
+List of non-obvious uncommon knowledge.
 
 ## Flows
 
