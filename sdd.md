@@ -45,7 +45,6 @@ Notes:
 - ELI5
   - Explain in simple terms, without jargon, assuming zero prior knowledge about the code
   - However, you *can* and *should* assume the reader is familiar with the *high-level* goals of the project — that's your target: explain it to this audience (zero knowledge about the code, but knowledge about the project)
-  - Assume the audience are more product managers, less technical programmers
 - Don't create `spec.md` for code that doesn't represent business logic, and also skip minor business logic, for example:
   - Tests
   - `.svg`
