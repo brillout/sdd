@@ -42,6 +42,10 @@ Notes:
   - Only cover business logic that is both *major* (plays a central and crucial role) and *high-level* (don't describe what code does, describe what's the high-level idea the code implements)
 - DRY
   - Every content should earn its place: either it's a high-level summary of knowledge written in code, or it's knowledge not written in code
+- ELI5
+  - Explain in simple terms, without jargon, assuming zero prior knowledge about the code
+  - However, you *can* and *should* assume the reader is familiar with the *high-level* goals of the project — that's your target: explain it to this audience (zero knowledge about the code, but knowledge about the project)
+  - Assume the audience are more product managers, less technical programmers
 - Don't create `spec.md` for code that doesn't represent business logic, and also skip minor business logic, for example:
   - Tests
   - `.svg`
