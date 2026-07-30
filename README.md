@@ -1,6 +1,6 @@
 # Spec-driven development
 
-**Get started**
+#### Get started
 
 Tell AI:
 
@@ -10,7 +10,7 @@ Apply https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 
 The link [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is just a raw link to [ssd.md](./ssd.md).
 
-**What does it do?**
+#### What does it do?
 
 - AI generates `.spec.md` for each source code file:
   ```md
@@ -40,12 +40,12 @@ The link [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md]
   ```
 - AI will maintain these `.spec.md` files
 
-**Why?**
+#### Why?
 
 It enables you to:
 - When AI makes a change, quickly read the modified business logic instead of reading code
 - Quickly navigate unfamiliar code
 
-**How does it work?**
+#### How does it work?
 
 To understand how it works, read the `sdd.md` file — it's small.
