@@ -8,8 +8,7 @@ Tell AI:
 Apply https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
-> [!NOTE]
-> [https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is the raw link of the `ssd.md` file of this repository.
+[https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md](https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md) is the raw link of the `ssd.md` file of this repository.
 
 #### What does it do?
 
