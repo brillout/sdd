@@ -1,6 +1,6 @@
 For each file and directory containing software source code, generate a `spec.md` file.
-- `some-code-file.ts` => `some-code-file.spec.ts`
-- `some-code-dir/` => `some-code-dir/spec.md`
+- `some-file.ext` => `some-file.spec.ext`
+- `some-dir/` => `some-dir/spec.md`
 
 Content:
 
@@ -31,16 +31,16 @@ List of all high-level flows.
 
 ## Before modifying this file
 
-Make sure to read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+Read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 Notes:
 - All `##` sections are optional, e.g. small file => one-sentence description can be enough
-- The goal `spec.md` is for humans to have a quick high-level understanding of the business logic, so keep it high-level:
+- The goal `spec.md` is for humans to quickly get a high-level understanding of the business logic — keep it all high-level:
   - Humans reasons top-down (high-level first)
   - If a human wants low-level details, he can look at the code => no need to document low-level or trivial logic
 - Aim for 100% *high-level* coverage, while keeping spec.md as succinct as possible (don't hesitate to skip sections)
-  - Only cover business logic that is both *major* (plays a central and crucial role) and *high-level* (don't describe what code does, describe what's the high-level idea the code implements)
+  - Only cover business logic that is both *major* (plays a central and crucial role) and *high-level* (don't describe what code does, describe the high-level idea the code implements)
 - DRY
   - Every content should earn its place: either it's a high-level summary of knowledge written in code, or it's knowledge not written in code
 - ELI5
