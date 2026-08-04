@@ -31,7 +31,7 @@ List of all high-level flows.
 
 ## Before modifying this file
 
-Read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+Read this file's format at https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 Notes:
