@@ -52,3 +52,7 @@ Notes:
   - Demo and examples
   - Small/trivial utility files
   - ...
+- Feel free to use graphics supported by GitHub (e.g. `mermaid` code blocks)
+- The file structure often represents different levels of abstraction => consider creating a nice hierarchy between `spec.md` files, for example:
+  - Root `spec.md` at root directory => highest-level repository overview
+  - `packages/*/spec.md` => high-level overview of the packages, while the root `spec.md` merely describes how packages work together
