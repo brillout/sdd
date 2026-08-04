@@ -1,33 +1,31 @@
-For each file and directory containing software source code, generate a `spec.md` file.
-- `some-file.ext` => `some-file.spec.ext`
+Describe the codebase's business logic in `spec.md` files, placed beside the code that implements it:
 - `some-dir/` => `some-dir/spec.md`
+- `some-file.ext` => `some-file.spec.md`
 
-Content:
+# Goal
+
+A `spec.md` is the answer a human gives when a colleague asks "how does this work?" — the high-level business logic, nothing else.
+
+Litmus test: every sentence must be one you'd *say out loud* when explaining how it works. Sentences about the repository itself (build, CI, release, packaging, tooling) or about code mechanics (libraries, flags, clever tricks) fail the test — that's how the repository works, not how the product works.
+
+- Humans reason top-down (high-level first); when they want low-level details, they read the code => never document low-level or trivial logic.
+- Aim for 100% coverage of the *business logic* — not of the file tree. A file inventory with one-liners is a map, not a spec.
+- DRY: every sentence earns its place — either it's a high-level summary of what the code implements, or it's business knowledge that isn't written in the code.
+- ELI5: simple terms, no jargon, assume zero knowledge about the code — but full knowledge of the project's goals. That's the target reader: knows the project, hasn't read the code.
+
+# Content
 
 ```md
-One-sentence description of what this file/directory does.
+One-sentence description of the business logic this file/directory implements.
 
 ## TLDR
 
-- Code does this
-- And that
+- What happens, from a bird's view
 - ...
-
-## Problems
-
-List of non-obvious problems.
-
-## Decisions
-
-List of non-obvious decisions.
-
-## Facts
-
-List of non-obvious uncommon knowledge.
 
 ## Flows
 
-List of all high-level flows.
+All high-level flows.
 
 ## Before modifying this file
 
@@ -35,24 +33,21 @@ Read this file's format at https://raw.githubusercontent.com/brillout/sdd/refs/h
 ```
 
 Notes:
-- The goal `spec.md` is for humans to quickly get a high-level understanding of the business logic — keep it all high-level:
-  - Humans reasons top-down (high-level first)
-  - If a human wants low-level details, he can look at the code => no need to document low-level or trivial logic
-- Aim for 100% *high-level* coverage, while keeping spec.md as succinct as possible
-  - Only cover business logic that is both *major* (plays a central role) and *high-level* (don't describe what code does, describe the high-level idea the code implements)
-- DRY
-  - Every content should earn its place: either it's a high-level summary of code, or it's knowledge not written in code
-- ELI5
-  - Explain in simple terms and without jargon, assume zero prior knowledge about the code
-  - However, you can and should assume the reader is familiar with the high-level goals of the project — that's your target audience: zero knowledge about the code, but knowledge about the project
-- All `##` sections are optional, e.g. small file => one-sentence description can be enough
-- Don't create `spec.md` for code that doesn't represent business logic, and also skip minor business logic, for example:
-  - Tests
-  - `.svg`
-  - Demo and examples
-  - Small/trivial utility files
-  - ...
-- Consider using graphics supported by GitHub (e.g. `mermaid` code blocks) when it helps explaining
-- The file structure often represents different levels of abstraction => consider creating a nice hierarchy between `spec.md` files, for example:
-  - Root `spec.md` at root directory => highest-level repository overview
-  - `packages/*/spec.md` => high-level overview of the packages, while the root `spec.md` merely describes how packages work together
+- All `##` sections are optional — for a small file, the one-sentence description can be enough
+- Consider using graphics supported by GitHub (e.g. `mermaid` code blocks) whenever helpful
+
+# What gets a spec.md
+
+Only code carrying *major* business logic. Skip:
+- Tests
+- Demos and examples
+- Assets (`.svg`, ...)
+- Small/trivial utility files
+- Repository machinery: build scripts, CI workflows, monorepo/tooling config
+- ...
+
+# Hierarchy
+
+The file structure often represents levels of abstraction => mirror it:
+- Root `spec.md` => the highest-level answer to "what does this software do, and how?" — the product's story, plus how the top-level subsystems relate. Not a repository overview.
+- Deeper `spec.md` files => each subsystem's story.
