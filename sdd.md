@@ -34,7 +34,7 @@ Read this file's format at https://raw.githubusercontent.com/brillout/sdd/refs/h
 
 Notes:
 - All `##` sections are optional — for a small file, the one-sentence description can be enough
-- Consider using graphics supported by GitHub (e.g. `mermaid` code blocks) whenever helpful
+- Consider using graphics (e.g. `mermaid` code blocks) whenever helpful
 
 # What gets a SPEC.md
 
