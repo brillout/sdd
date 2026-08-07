@@ -2,6 +2,7 @@ Describe the codebase's business logic in `SPEC.md` files, placed beside the cod
 - `some-dir/` => `some-dir/SPEC.md`
 - `some-file.ext` => `some-file.SPEC.md`
 
+
 ## Goal
 
 A `SPEC.md` is the answer a human gives when a colleague asks "how does this work?" — the high-level business logic, nothing else.
@@ -12,6 +13,7 @@ Litmus test: every sentence must be one you'd *say out loud* when explaining how
 - Aim for 100% coverage of the *business logic* — not of the file tree. A file inventory with one-liners is a map, not a spec.
 - DRY: every sentence earns its place — either it's a high-level summary of what the code implements, or it's business knowledge that isn't written in the code.
 - ELI5: simple terms, no jargon, assume zero knowledge about the code — but full knowledge of the project's goals. That's the target reader: knows the project, hasn't read the code.
+
 
 ## Content
 
@@ -36,6 +38,7 @@ Notes:
 - All `##` sections are optional — for a small file, the one-sentence description can be enough
 - Consider using graphics (e.g. `mermaid` code blocks) whenever helpful
 
+
 ## What gets a SPEC.md
 
 Only code carrying *major* business logic. Skip:
@@ -45,6 +48,7 @@ Only code carrying *major* business logic. Skip:
 - Small/trivial utility files
 - Repository machinery: build scripts, CI workflows, monorepo/tooling config
 - ...
+
 
 ## Hierarchy
 
