@@ -1,10 +1,10 @@
-Describe the codebase's business logic in `spec.md` files, placed beside the code that implements it:
-- `some-dir/` => `some-dir/spec.md`
-- `some-file.ext` => `some-file.spec.md`
+Describe the codebase's business logic in `SPEC.md` files, placed beside the code that implements it:
+- `some-dir/` => `some-dir/SPEC.md`
+- `some-file.ext` => `some-file.SPEC.md`
 
 # Goal
 
-A `spec.md` is the answer a human gives when a colleague asks "how does this work?" — the high-level business logic, nothing else.
+A `SPEC.md` is the answer a human gives when a colleague asks "how does this work?" — the high-level business logic, nothing else.
 
 Litmus test: every sentence must be one you'd *say out loud* when explaining how it works. Sentences about the repository itself (build, CI, release, packaging, tooling) or about code mechanics (libraries, flags, clever tricks) fail the test — that's how the repository works, not how the product works.
 
@@ -36,7 +36,7 @@ Notes:
 - All `##` sections are optional — for a small file, the one-sentence description can be enough
 - Consider using graphics supported by GitHub (e.g. `mermaid` code blocks) whenever helpful
 
-# What gets a spec.md
+# What gets a SPEC.md
 
 Only code carrying *major* business logic. Skip:
 - Tests
@@ -49,5 +49,5 @@ Only code carrying *major* business logic. Skip:
 # Hierarchy
 
 The file structure often represents levels of abstraction => mirror it:
-- Root `spec.md` => the highest-level answer to "what does this software do, and how?" — the product's story, plus how the top-level subsystems relate. Not a repository overview.
-- Deeper `spec.md` files => each subsystem's story.
+- Root `SPEC.md` => the highest-level answer to "what does this software do, and how?" — the product's story, plus how the top-level subsystems relate. Not a repository overview.
+- Deeper `SPEC.md` files => each subsystem's story.
