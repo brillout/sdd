@@ -58,5 +58,5 @@ Read the [`sdd.md` file](./sdd.md) — it's small.
 
 ## See also
 
-- [@brillout/ai-memory](https://github.com/brillout/sdd/blob/main/sdd.md) — AI memory via MEMORY.md
+- [@brillout/ai-memory](https://github.com/brillout/ai-memory) — AI memory via MEMORY.md
 - [The Framework](https://the-framework.ai/) — Autonomous AI. Make the important decisions, let AI do the rest.
