@@ -1,4 +1,4 @@
-# Spec-driven development
+# Spec-Driven Development
 
 
 ## Get started
