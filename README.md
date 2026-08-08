@@ -53,7 +53,7 @@ It enables you to:
 
 ## How does it work?
 
-Read the `sdd.md` file — it's small.
+Read the [`sdd.md` file](./sdd.md) — it's small.
 
 
 ## See also
