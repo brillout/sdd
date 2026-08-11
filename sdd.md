@@ -1,5 +1,5 @@
 For each file and directory containing software source code, a `SPEC.md` file describes the high-level business logic.
-- `some-file.ext` => `some-file.SPEC.ext`
+- `some-file.ext` => `some-file.SPEC.md`
 - `some-dir/` => `some-dir/SPEC.md`
 
 
