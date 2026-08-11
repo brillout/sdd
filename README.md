@@ -6,7 +6,7 @@
 Tell AI:
 
 ```
-Apply https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+Install https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 > [!NOTE]
