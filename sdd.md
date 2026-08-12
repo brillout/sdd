@@ -58,4 +58,4 @@ The file structure often represents levels of abstraction => mirror it:
 ## Install
 
 1. Generate a `SPEC.md` file for each file and directory containing software source code
-2. Make sure `AGENTS.md` mentions a sentence like: "Before writing SPEC.md files, read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
+2. Make sure `AGENTS.md` mentions a sentence like this: "Before writing SPEC.md files, read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
