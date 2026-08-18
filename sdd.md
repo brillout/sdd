@@ -1,4 +1,4 @@
-For each file and directory containing software source code, a `SPEC.md` file describes the high-level business logic.
+For each file and directory containing software source code, a `SPEC.md` file describes what the code does.
 - `some-file.ext` => `some-file.SPEC.md`
 - `some-dir/` => `some-dir/SPEC.md`
 
@@ -12,6 +12,7 @@ Litmus test: every sentence must be one you'd *say out loud* when explaining how
 - Humans reason top-down (high-level first); when they want low-level details, they read the code => never document low-level or trivial logic.
 - 100% coverage of *high-level* business logic, skip details
 - Every sentence earns its place — zero low-level details, only high-level explanations
+- In `## Flows` only describe what the code does and nothing else (no context, no history) — you can provide context in `## Rationales`
 - ELI5: simple terms, no jargon, assume zero knowledge about the code — but full knowledge of the project's goals. That's the target reader: knows the project, hasn't read the code.
 
 
@@ -32,16 +33,16 @@ List of all flows, only high-level from a bird's view.
 
 List of non-straightforward rationales for the flows above.
 
-## Before writing SPEC.md files
+## Before modifying/creating SPEC.md files
 
-Read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+Always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 Notes:
 - Sections:
-  - `## Before writing SPEC.md files` must never be omitted
+  - `## Before modifying/creating SPEC.md files` must never be omitted
   - The other `##` sections are optional (e.g. for a small file, the one-sentence description can be enough)
-  - Don't create other `##` sections not listed above
+  - Never create other `##` sections not listed above
 - Consider using graphics (e.g. `mermaid` code blocks) whenever helpful
 - Skip examples and demos
 - For files that don't carry much business logic, consider creating a SPEC.md with only a one-sentence description.
@@ -58,4 +59,4 @@ The file structure often represents levels of abstraction => mirror it:
 ## Install
 
 1. Generate a `SPEC.md` file for each file and directory containing software source code
-2. Make sure `AGENTS.md` mentions a sentence like this: "Before writing SPEC.md files, read https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
+2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
