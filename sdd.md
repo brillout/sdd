@@ -35,7 +35,7 @@ List of non-straightforward rationales for the flows above.
 
 ## Before modifying/creating SPEC.md files
 
-Always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
+You must always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md
 ```
 
 Notes:
@@ -59,4 +59,4 @@ The file structure often represents levels of abstraction => mirror it:
 ## Install
 
 1. Generate a `SPEC.md` file for each file and directory containing software source code
-2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
+2. Make sure `AGENTS.md` contains: "Before modifying/creating SPEC.md files, you must always read and respect https://raw.githubusercontent.com/brillout/sdd/refs/heads/main/sdd.md"
