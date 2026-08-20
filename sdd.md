@@ -9,11 +9,16 @@ A `SPEC.md` is the answer a human gives when a colleague asks "how does this wor
 
 Litmus test: every sentence must be one you'd *say out loud* when explaining how it works. Sentences about the repository itself (build, CI, release, packaging, tooling) or about code itself (flags, clever tricks) fail the test — that's how the code works, not how the product works.
 
-- Humans reason top-down (high-level first); when they want low-level details, they read the code => never document low-level or trivial logic.
-- 100% coverage of *high-level* business logic, skip details
-- Every sentence earns its place — zero low-level details, only high-level explanations
-- In `## Flows` only describe what the code does and nothing else (no context, no history) — you can provide context in `## Rationales`
-- ELI5: simple terms, no jargon, assume zero knowledge about the code — but full knowledge of the project's goals. That's the target reader: knows the project, hasn't read the code.
+- 100% coverage of high-level business logic from a bird's view — skip all implementation details
+- Explain everything from the perspective of user stories
+  - E.g. `## Flows` describes how the user stories are fulfilled
+- Assume zero knowledge about the code — the target reader is a product manager: knows the project and its user stories, but never reads the code
+- The content is a direct mapping between high-level explanation and code
+  - The only place you can provide additional context is in `## Rationales`
+- Clear writing
+  - Avoid creating new jargon. When you do, always explain it in `## Glossary`.
+  - Avoid fuzzy words and fuzzy sentences — prefer clarity. Ideally, the user never has to second guess the meaning of a sentence — aim for zero ambiguity.
+  - Reduce the need for prior reading. Each sentence can be understood on its own, with minimal prior reading.
 
 
 ## File content
@@ -21,17 +26,25 @@ Litmus test: every sentence must be one you'd *say out loud* when explaining how
 ```md
 One-sentence description of the business logic this file/directory implements.
 
-## TLDR
+## User Stories
 
-List of one-sentence succinct summary of the content below.
+List of user stories that the flows below support.
+
+## Flows — TL;DR
+
+List of one-sentence succinct summary of the flows below.
 
 ## Flows
 
-List of all flows, only high-level from a bird's view.
+List of all high-level business logic and how they fulfill user stories.
 
 ## Rationales
 
 List of non-straightforward rationales for the flows above.
+
+## Glossary
+
+List of jargon explanations.
 
 ## Before modifying/creating SPEC.md files
 
@@ -43,17 +56,18 @@ Notes:
   - `## Before modifying/creating SPEC.md files` must never be omitted
   - The other `##` sections are optional (e.g. for a small file, the one-sentence description can be enough)
   - Never create other `##` sections not listed above
-- Consider using graphics (e.g. `mermaid` code blocks) whenever helpful
+- For each flow, consider using a `mermaid` graphic
 - Skip examples and demos
-- For files that don't carry much business logic, consider creating a SPEC.md with only a one-sentence description.
-- For tests, create a succinct SPEC.md describing what the tests cover
+- For tests, create a succinct `SPEC.md` describing what the tests cover
 
 
 ## Hierarchy
 
 The file structure often represents levels of abstraction => mirror it:
-- Root `SPEC.md` => the highest-level answer to "what does this software do, and how?" — the high-level product's story, plus how the top-level subsystems relate. Not a low-level repository overview.
-- Deeper `SPEC.md` files => each subsystem's story.
+- Root `SPEC.md`:
+  - The highest-level answer to "what does this software do?" — the high-level product's story
+  - How the top-level subsystems relate (instead of a low-level repository overview)
+- Deeper `SPEC.md` files => each subsystem's story
 
 
 ## Install
