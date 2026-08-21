@@ -59,7 +59,7 @@ Notes:
   - `## Before modifying/creating SPEC.md files` must never be omitted
   - The other `##` sections are optional (e.g. for a small file, the one-sentence description can be enough)
   - Never create other `##` sections not listed above
-- For each flow, you must consider using a `mermaid` graphic
+- For each flow, always consider using a `mermaid` graphic
 - Skip examples and demos
 - For tests, create a succinct `SPEC.md` describing what the tests cover
 
