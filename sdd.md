@@ -12,6 +12,7 @@ A `SPEC.md` is the answer a human gives when a colleague asks "how does this wor
 Litmus test: every sentence must be one you'd *say out loud* when explaining how it works. Sentences about the repository itself (build, CI, release, packaging, tooling) or about code itself (flags, clever tricks) fail the test — that's how the code works, not how the product works.
 
 - 100% coverage of high-level business logic from a bird's view — skip all implementation details
+  - What the user can see or interact with is never an implementation detail: a tooltip, a truncated label, a disabled button — that's business logic and belongs in the spec.
 - Explain everything from the perspective of user stories
   - E.g. `## Flows` describes how the user stories are fulfilled
 - Assume zero knowledge about the code — the target reader is a technical product manager: knows the project and its user stories, is proficient in programming and software engineering, but never reads the code.
@@ -19,8 +20,15 @@ Litmus test: every sentence must be one you'd *say out loud* when explaining how
 - The content is a direct mapping between high-level explanation and code
   - The only place you can provide additional context is in `## Rationales`
 - Clear writing
+  - The say-it-out-loud litmus test picks *what to say* — not how to write it. Speech leans on pointing at the screen and on follow-up questions; a spec gets neither. Second litmus test: every sentence must survive a reader who cannot see the screen and cannot ask.
+  - Name referents instead of gesturing at them:
+    - Files and components => their real code name (`TopNav`), never an invented stand-in ("the page's header"). The real name is greppable and leads the reader to that component's own `SPEC.md`.
+    - UI mechanisms => the standard term everyone already knows: "in a tooltip on hover", not "behind a hover".
+    - Pronouns ("it", "them") => antecedent in the same sentence, or repeat the noun.
+  - One concept => one name, used verbatim across all `SPEC.md` files. Never rotate synonyms (the same thing called *session* here and *run* there): the reader must assume different words mean different things.
   - Avoid creating new jargon. When you do, always explain it in `## Glossary`.
   - Avoid fuzzy words and fuzzy sentences — prefer clarity. Ideally, the user never has to second guess the meaning of a sentence — aim for zero ambiguity.
+  - Be short by omitting, not by compressing. Dropping a detail keeps the rest clear; packing three facts into one dense clause-chain makes all three ambiguous.
   - Reduce the need for prior reading. Each sentence can be understood on its own, with minimal prior reading.
 
 
@@ -60,7 +68,8 @@ Notes:
   - The other `##` sections are optional (e.g. for a small file, the one-sentence description can be enough)
   - Never create other `##` sections not listed above
 - For each flow, always consider using a `mermaid` graphic
-- Skip examples and demos
+- Skip usage examples and demos
+  - Exception: for a visual component, a one-line example rendering (e.g. `⚠ 3 errors · <latest error headline>`) is specification, not demo — one such line often replaces sentences of layout prose
 - For tests, create a succinct `SPEC.md` describing what the tests cover
 
 
@@ -71,6 +80,7 @@ The file structure often represents levels of abstraction => mirror it:
   - The highest-level answer to "what does this software do?" — the high-level product's story
   - How the top-level subsystems relate (instead of a low-level repository overview)
 - Deeper `SPEC.md` files => each subsystem's story
+- Shared vocabulary lives up the tree: a term used by several specs is defined once, in the `## Glossary` of the closest `SPEC.md` above all of them, and reused verbatim below
 
 
 ## Install
