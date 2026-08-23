@@ -24,10 +24,10 @@ How a spec is written:
 - Zero ambiguity: the reader must never second-guess what a sentence means.
 - Name referents, never gesture at them:
   - Files and components => their real code name (`TopNav`), never an invented stand-in ("the page's header"). The real name is greppable and leads the reader to that component's own `SPEC.md`.
-  - UI mechanisms => their standard name: "in a tooltip on hover", not "behind a hover".
   - Pronouns => antecedent in the same sentence, or repeat the noun.
+- Established concepts => their established name, whatever the domain: "in a tooltip on hover", not "behind a hover"; "debounced", not "waits until the typing settles"; "a dry run", not "a pass that only pretends". A paraphrase of a named concept is invented jargon in disguise — the reader must decode what the standard name would have said instantly.
+- No new jargon. Coin a term only when the concept has no established name, and explain every coinage in `## Glossary`.
 - One concept => one name, used verbatim across all `SPEC.md` files. Never rotate synonyms (the same thing called *session* here and *run* there): the reader must assume different words mean different things.
-- No new jargon. When unavoidable, explain it in `## Glossary`.
 - Short by omission, not by compression: drop a detail rather than pack three facts into one dense clause-chain.
 - Minimal prior reading: each sentence understandable on its own.
 
