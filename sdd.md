@@ -15,13 +15,13 @@ Write for exactly one reader: a technical product manager — knows the project 
 Content:
 - 100% coverage of high-level business logic from a bird's view
 - Only explains what the code does — the only additional context is `## User story` and `## Rationales`
-- Skip source code that don't represent business-logic, e.g. `examples/`
-  - Except tests: create a `SPEC.md` only describing what the tests cover (don't explain how the tests work)
+- Skip source code that don't represent business logic, e.g. `examples/`
+  - Except tests: create a `SPEC.md` only describing what the tests cover (don't explain how the test file work)
 
 Clear writing:
-- Zero ambiguity: the reader must never second-guess what a sentence means.
-- Minimal prior reading: each sentence understandable on its own.
-- Established concepts => use their established name, whatever the domain.
+- Zero ambiguity: the reader must never second-guess what a sentence means
+- Minimal prior reading: each sentence understandable on its own
+- Established concepts => use their established name, whatever the domain
 - No new jargon. Coin a term only when the concept has no established name, and explain every coinage in `## Glossary`.
 - One concept => one name, used verbatim across all `SPEC.md` files. Never rotate synonyms: the reader assumes different words mean different things.
 
