@@ -37,11 +37,12 @@ List of user stories that two or more business logic below relate to.
 
 ## Problems [optional]
 
-List of problems user stories that two or more business logic below relate to.
+List of problems that two or more business logic below relate to.
 
 ## Glossary [optional]
 
-List of jargon explanations.
+[1] some jargon: explanation
+[2] some other jargon: explanation
 
 ## Business logic — TL;DR [required if `## Business logic` exists]
 
@@ -54,7 +55,7 @@ List of jargon explanations.
 
 #### User story [required, or optional if `#### Problem` is defined]
 
-The user story or stories the business logic relates to (can be a reference to `## User stories`)
+The user story/stories the business logic relates to (can be a reference to `## User stories`)
 
 #### Problem [required, or optional if `#### User story` is defined]
 
@@ -84,6 +85,7 @@ Note:
   - The goal is to provide context and make it clear to the technical product manager why the business logic exists
   - The "user" refers to the end user. The user story sections connect the business logic to what happens from the end user's perspective — the perspective the technical product manager is familiar with.
   - While the business logic might not be directly connected to a user story, you can still consider using a user story section to provide the broader context in which the business logic fits
+- Every time you use jargon, refer to `## Glossary`: `some jargon [x]`
 
 
 ## Hierarchy
